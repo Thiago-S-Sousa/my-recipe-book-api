@@ -1,4 +1,4 @@
-# BookStore API
+# MyRecipeBook API
 
 Backend da aplicação **MyRecipeBook**, desenvolvido em **.NET 9**, responsável pelo gerenciamento do catálogo de receitas da plataforma.
 
