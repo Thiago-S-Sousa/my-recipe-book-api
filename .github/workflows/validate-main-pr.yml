@@ -1,0 +1,18 @@
+name: Validate Main PR
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate-source-branch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Validate source branch
+        run: |
+          if [ "${{ github.head_ref }}" != "develop" ]; then
+            echo "Somente a branch develop pode abrir Pull Request para a main."
+            exit 1
+          fi
